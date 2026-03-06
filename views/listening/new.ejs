@@ -1,0 +1,48 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+<div class="row">
+    <div class="col-8 offset-2">
+        <br><br>
+    <h3>Create a new Listening</h3>
+    <form action="/listening" method="POST" novalidate class="needs-validation" enctype="multipart/form-data">
+      <div class="mb-3">
+          <label for="title" class="form-label">Tittle</label>
+          <input type="text" placeholder="Enter tittle" name="listening[title]" class="form-control" required>
+          <div class="valid-feedback">Looks good</div>
+          <div class="invalid-feedback">Enter valid title</div>
+      </div>
+        <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+             <textarea name="listening[description]"class="form-control" required></textarea>
+             <div class="valid-feedback"> Now its looking Good</div>
+          <div class="invalid-feedback">Please enter a short description's</div>
+        </div>
+        <div class="mb-3">
+             <label for="image" class="form-label">Uplod image</label>
+             <input type="file" name="listening[image][url]"class="form-control">
+        </div>
+       <div class="row">
+         <div class="mb-3 col-4">
+            <label for="price" class="form-label">Price</label>
+             <input type="number" placeholder="Enter price" name="listening[price]" class="form-control" required>
+              <div class="valid-feedback"> Now its looking Good</div>
+          <div class="invalid-feedback">Please enter a valid price</div>
+        </div>
+        <div class="mb-3 col-8">
+             <label for="country" class="form-label">Country</label>
+              <input type="text" placeholder="Enter country" name="listening[country]" class="form-control" required>
+               <div class="valid-feedback"> Now its looking Good</div>
+          <div class="invalid-feedback">Please enter a valid Country name</div>
+        </div>
+       </div>
+        <div class="mb-3">
+            <label for="location" class="form-label">Location</label>
+             <input type="text" placeholder="Enter Location" name="listening[location]" class="form-control" required>
+              <div class="valid-feedback"> Now its looking Good</div>
+          <div class="invalid-feedback">Please enter a valid Location</div>
+        </div>
+        <button class="btn btn-dark mb-3">Add</button>
+    </form>
+ </div>
+</div>
+</body>
