@@ -79,3 +79,15 @@ footer{
   text-decoration: none;
   color: black;
 }
+img{
+max-width:100%;
+height:auto;
+}
+.listening-card{
+  border: none;
+  transition: transform 0.2s ease;
+}
+
+.listening-card:hover{
+  transform: scale(1.02);
+}
