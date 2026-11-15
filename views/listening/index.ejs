@@ -1,18 +1,21 @@
 <% layout("/layouts/boilerplate") %>
 <style>
- #filters{
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  align-items: center;
-  padding-bottom: 10px;
-  }
-  .filter{
+ #filters {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    align-items: center;
+    gap: 2rem;
+    padding: 10px 10px 15px;
+    white-space: nowrap;
+}
+  .filter {
     text-align: center;
-    margin-right: 2rem;
-    margin-top: 1rem;
-    opacity: 0.5;
-  }
+    flex: 0 0 auto;
+    margin: 0;
+    opacity: 0.6;
+}
   .filter:hover{
     opacity: 1;
     cursor: pointer;
@@ -28,9 +31,19 @@
     margin-left: 3.5rem;
     display: flex;
     align-items: center;
+    flex: 0 0 auto;
+    margin: 0;
+    white-space: nowrap;
   }
+  .dark_mode {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+}
 </style>
-    <div id="filters" class="d-flex flex-wrap justify-content-center gap-3 mt-3">
+    <div id="filters" class="mt-3">
       <a href="/listening/filter/trending">
         <div class="filter text-center filter-link">
           <div><i class="fa-solid fa-fire"></i></div>
@@ -85,10 +98,9 @@
           <p>Sea</p>
         </div>
       </a>
-      <div class="dark_mode">
-         <div class="form-check-reverse form-switch"></div>
-        <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
-        <label class="form-check-label" for="switchCheckDefault">Switch to dark mode</label>
+      <div class="dark_mode form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" id="darkModeSwitch">
+        <label class="form-check-label" for="darkModeSwitch">Switch to dark mode</label>
       </div>
       <div class="tax-toggle">
         <div class="form-check-reverse form-switch">
