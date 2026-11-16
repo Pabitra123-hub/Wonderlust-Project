@@ -48,6 +48,14 @@
       align-items: center;
       gap: 10px;
     }
+
+    .dark-mode .form-check-input {
+      float: none;
+      margin: 0;
+      position: relative;
+      top: 3px;
+      align-items: center;
+    }
   </style>
   <div id="filters" class="d-flex flex-wrap justify-content-center gap-3 mt-3">
     <a href="/listening/filter/trending">
@@ -105,7 +113,7 @@
       </div>
     </a>
     <div class="dark-mode">
-      <div class="form-check-input">
+      <div class="form-check form-switch">
         <label class="form-check-label" for="flexSwitchCheckDefault">
           Switch to dark mode
         </label>
