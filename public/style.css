@@ -112,16 +112,66 @@ img {
 }
 
 /* Dark Mode */
+/* Dark Mode */
+
 body.dark-theme {
-    background-color: #121212;
-    color: white;
+    background-color: #000 !important;
+    color: white !important;
 }
 
-.dark-theme .card {
-    background-color: #222;
-    color: white;
-}
-
+/* Navbar */
 .dark-theme .navbar {
-    background-color: #222 !important;
+    background-color: #000 !important;
+}
+
+/* Navbar links */
+.dark-theme .nav-link {
+    color: white !important;
+}
+
+/* Compass icon */
+.dark-theme .fa-compass {
+    color: white !important;
+}
+
+/* Footer */
+.dark-theme .f-info {
+    background-color: #000 !important;
+    color: white !important;
+}
+
+.dark-theme .f-info-links a {
+    color: white !important;
+}
+
+.dark-theme .f-info-socials i {
+    color: white !important;
+}
+
+/* Listing cards */
+.dark-theme .listening-card,
+.dark-theme .card-body {
+    background-color: #000 !important;
+    color: white !important;
+}
+
+/* Listing links */
+.dark-theme .listening-link,
+.dark-theme #filters a {
+    color: white !important;
+}
+
+/* Icons */
+.dark-theme i {
+    color: white !important;
+}
+
+/* Buttons */
+.dark-theme .btn {
+    color: white;
+}
+
+/* Map border */
+.dark-theme #map {
+    border-color: white !important;
 }
