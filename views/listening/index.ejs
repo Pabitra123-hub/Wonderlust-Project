@@ -172,3 +172,14 @@
       }
     })
   </script>
+  <script>
+    let darkModeSwitch = document.getElementById("flexSwitchCheckDefault");
+
+    darkModeSwitch.addEventListener("change", function () {
+      if (darkModeSwitch.checked) {
+        document.body.classList.add("dark-theme");
+      } else {
+        document.body.classList.remove("dark-theme");
+      }
+    });
+  </script>
