@@ -177,5 +177,9 @@ body.dark-theme {
 }
 
 .dark-theme .dark-mode {
-     border-color: white !important;
+    border-color: white !important;
+}
+
+.dark-theme .tax-toggle {
+    border-color: white !important;
 }
