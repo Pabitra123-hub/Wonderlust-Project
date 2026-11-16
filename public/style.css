@@ -175,3 +175,7 @@ body.dark-theme {
 .dark-theme #map {
     border-color: white !important;
 }
+
+.dark-theme .dark-mode {
+     border-color: white !important;
+}
