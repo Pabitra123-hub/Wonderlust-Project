@@ -147,6 +147,9 @@ body.dark-theme {
 .dark-theme .f-info-socials i {
     color: blue !important;
 }
+.dark-theme .f-info-socials.insta{
+    color: red !important;
+}
 
 /* Listing cards */
 .dark-theme .listening-card,
